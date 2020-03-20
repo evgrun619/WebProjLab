@@ -1,0 +1,39 @@
+<body>
+
+<h1>The table element</h1>
+
+<table>
+  <tr>
+    <th>מס הזמנה</th>
+    <th>מס מדגם</th>
+    <th>נפח</th>
+    <th>נפח מצתבר</th>
+	<th>מס ערבל</th>
+	<th>ת. משלוח</th>
+	<th>שעות יציאה</th>
+	<th>שעות נטילה</th>
+	<th>שעות הכנה</th>
+    <th>סומך</th>	
+  </tr>
+          {% for row in beton %}
+		  <form   method="post"  action="/update">
+          <input type="hidden" value="{{row[0]}}" name="rowid" readonly >
+          <input type="text" value="{{row[1]}}" size="12" name="ed_orderid" readonly>
+          <input type="text" value="{{row[2]}}" size="12" name="ed_msp_mdgm">
+          <input type="text" value="{{row[3]}}" size="12" name="ed_vol_azv">
+          <input type="text" value="{{row[4]}}" size="12" name="ed_vol_mtz">
+          <input type="text" value="{{row[5]}}" size="12" name="ed_mixer">
+          <input type="text" value="{{row[6]}}" size="12" name="ed_mishl">
+          <input type="text" value="{{row[7]}}" size="12" name="ed_time_exit">
+          <input type="text" value="{{row[8]}}" size="12" name="ed_time_ntl">
+          <input type="text" value="{{row[9]}}" size="12" name="ed_time_ahana">
+          <input type="text" value="{{row[10]}}" size="12" name="ed_someh">
+		  </form>>
+         {% endfor %} 
+  
+ 
+  
+</table>
+<button type="submit" form="formconcntl" value="Submit">Submit</button>
+</body>
+</html>

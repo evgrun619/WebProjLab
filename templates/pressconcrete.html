@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+label {
+  border: 1px solid powderblue;
+  margin: 20px;
+}
+
+input {
+  border: 1px solid powderblue;
+  margin: 20px;
+}
+
+h2 { 
+  margin: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>נא להקליד מסםר הזמנה</h2>
+
+<form  id="myFormpress" action="/show" method="post" >
+  <label for="forderid"  align="center" >מספר הזמנה:</label>
+  <input type="text" id="forderid" name="forderid"  required><br><br>  
+  
+  <input type="radio" id="press7" name="press" value="press7"   checked="true">
+  <label for="press7" align="center" >חוזק 7 יום</label><br>
+  <input type="radio" id="press28" name="press" value="press28" >
+  <label for="press28" align="center" >חוזק 28 יום</label><br>
+  <input type="radio" id="pressother" name="press" value="pressother" >
+  <label for="pressother" align="center" >יום נוסף</label><br>
+  
+  <input type="submit" value="Submit"  >
+</form>
+
+
+
+</body>
+</html>

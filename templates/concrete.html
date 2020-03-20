@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+h3{
+ margin: 30px;
+}
+label{
+  border: 1px solid powderblue;
+  margin: 20px;
+}
+
+</style>
+<h3>Please insert concrete data</h3>
+  
+<form id="myForm" action="/" method="post">
+  <input type="text" id="forderid" name="forderid" align="right" size="6" required>
+  <label for="forderid">:מס הזמנה</label><br></br>
+
+  
+   <select id="fsugbeton" name="fsugbeton">
+	  <option value="10">ב-10</option>
+	  <option value="20">ב-20</option>
+	  <option value="30">ב-30</option>
+	  <option value="40">ב-40</option>
+	  <option value="50">ב-50</option>
+	  <option value="60">ב-60</option>
+	</select>
+  <label for="fsugbeton">:סוג בטון</label><br></br>
+  
+
+  <input type="text" id="fvolume" name="fvolume" align="right" size="3">
+  <label for="fvolume">:נפח</label><br></br>
+
+  <input type="text" id="fmsp_mdgm" name="fmsp_mdgm" align="right" size="6" required >
+  <label for="fmsp_mdgm">:מס מדגםים</label><br></br>
+  
+  <input type="text" id="fmosafim" name="fmosafim" align="right" size="6">
+  <label for="fmosafim">:מוספים</label><br></br>
+  
+  <input type="text" id="fsapak" name="fsapak" align="right" size="10">
+  <label for="fsapak">:ספק</label><br></br>
+
+  
+  
+  <select id="fdargat_hasifa" name="fdargat_hasifa">
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>	  
+	  <option value="5">5</option>
+	  <option value="6">6</option>
+	  <option value="7">7</option>
+	  <option value="8">8</option>
+	  <option value="9">9</option>
+	  <option value="10">10</option>
+	  <option value="11">11</option>  
+	</select>
+  <label for="fdargat_hasifa">:דרגת חסיפה</label><br></br>
+
+  
+  <select id="fnidgam_from" name="fnidgam_from">
+	  <option value="ערבל">ערבל</option>
+	  <option value="משאבה">משאבה</option>
+	  <option value="מיכל העברה">מיכל העברה</option>
+	  <option value="אחר">אחר</option>	  
+	</select>
+  
+  <label for="fnidgam_from">:נדגם מ</label><br></br>
+
+  
+
+
+  <select id="fefiun_beton" name="fefiun_beton">
+	  <option value="רגיל">רגיל</option>
+	  <option value="משאבה">משאבה</option>
+	  <option value="ללא פוליה גלוי">ללא פוליה גלוי</option>
+	  <option value="דחוס">דחוס</option>	  
+	  <option value="">תרמי/בנטונייט</option>	  
+	  <option value="ללא מעכב">ללא מעכב</option>	  
+	  <option value="עסית בטקל">עסית בטקל</option>	  
+	  <option value="אחר">אחר</option>	  
+	</select>
+  <label for="fefiun_beton">:איפיון בטון</label><br></br>
+
+  <input type="text" id="fgodel_gargir" name="fgodel_gargir" align="right" size="10">
+  <label for="fgodel_gargir">:גודל גרגיר</label><br></br>
+  
+  
+  <select id="fshita_hashpara" name="fshita_hashpara">
+	  <option value="תקינת">תקינת</option>
+	  <option value="באתר">באתר</option>
+	  <option value="אחר">אחר</option>	  
+	</select>
+   <label for="fshita_hashpara">:שיתט האשפרה</label><br></br>
+ 
+  
+  
+  <select id="fnidgam_bcoah" name="fnidgam_bcoah">
+	  <option value='בכ"ח'>בכ"ח</option>
+	  <option value='מזמין'>מזמין</option>	  
+	</select>
+  <label for="fnidgam_bcoah">:פרטי דוגם</label><br></br>
+  
+  
+  <input type="time" id="fshaa_start" name="fshaa_start" align="right" size="5">
+  <label for="fshaa_start">:משעה</label><br></br>
+  
+  <input type="time" id="fshaa_end" name="fshaa_end" align="right" size="5">
+  <label for="fshaa_end">:עד שעה</label>   
+  <input type="submit" value="Add">
+</form>
+
+
+
+
+</body>
+</html>
